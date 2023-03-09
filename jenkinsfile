@@ -1,4 +1,4 @@
-node
+node {
   def app
 
     stage('Clone') {
@@ -10,7 +10,7 @@ node
     }
 
     stage('Run image') {
-        docker.image('xavki/nginx').WitRun('-p 80:80') { c ->
+        docker.image('xavki/nginx').witRun('-p 80:80') { c ->
 
         sh 'docker ps'
 
